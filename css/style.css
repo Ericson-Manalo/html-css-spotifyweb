@@ -27,12 +27,22 @@ main nav{
 main section{
     width: calc(100% - 200px);
     height: calc(100vh - 100px);
-    background-color: red;
+    background-color: #141922;
 }
+
+button{
+    background-color: #080b12;
+    height: 60px;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+}
+
+
+
 
 footer{
     height: 100px;
-    background-color: blue;
+    background-color: #282828;
 }
 
 
@@ -61,6 +71,16 @@ footer{
 .upper-nav, .lower-nav{
     padding: 1.5rem;
 }
+
+.upper-section{
+    height: 120px;
+    background-color: #080b12;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
 
 ul li{
     list-style-type: none;
