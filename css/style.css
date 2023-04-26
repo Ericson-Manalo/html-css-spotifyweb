@@ -9,15 +9,14 @@ main{
     display: flex;
 }
 
-
 main nav{
-    width: 250px;
+    width: 200px;
     height: calc(100vh - 100px);
     background-color: aqua;
 }
 
 main section{
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     height: calc(100vh - 100px);
     background-color: red;
 }
@@ -25,4 +24,18 @@ main section{
 footer{
     height: 100px;
     background-color: blue;
+}
+
+.upper-nav, .lower-nav{
+    padding: 1.5rem;
+}
+
+ul li{
+    list-style-type: none;
+    padding-top: .8rem;
+}
+
+li img{
+    width: 20px;
+    height: 20px;
 }
