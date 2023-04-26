@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet"> 
     <title>Spotify</title>
 </head>
 <body>
@@ -13,10 +17,12 @@
 
         <nav>
             <div class="upper-nav">
-                <img src="img/favicon.ico" alt="Spotify image">
-                <h1>
-                    Spotify
-                </h1>
+                <div class="flex">
+                    <img src="img/favicon.ico" alt="Spotify image" class="w-text">
+                    <h1 class="w-text">
+                        Spotify
+                    </h1>
+                </div>
 
                 <ul>
                     <li>
@@ -34,7 +40,7 @@
                 </ul>
 
                 <ul>
-                    <h3>
+                    <h3 class="w-text">
                         Playlist
                     </h3>
                     <li>
@@ -70,7 +76,19 @@
                 
             </div>
             <div class="lower-nav">
-                <i class="fa-regular fa-circle-arrow-down fa-2xs"></i>
+                <div class="download-side flex">
+                    <img src="img/download.svg" alt="">
+                    <span>
+                        Installa app
+                    </span>
+                </div>
+
+                <div class="account flex">
+                    <img src="img/profile.svg" alt="">
+                    <span class="w-text">
+                        John Doe
+                    </span>
+                </div>
 
             </div>
         </nav>
