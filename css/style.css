@@ -22,7 +22,6 @@ main nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
 }
 
 main section{
@@ -91,3 +90,34 @@ li img{
     background-color: grey;
     border-radius: 50%;
 }
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    
+}
+
+
+@media screen and (max-width: 992px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 576px){
+    
+    main nav{
+        width: 80px;
+    }
+
+    main section{
+        width: calc(100% - 80px);
+    }
+}
+
+
