@@ -1,0 +1,28 @@
+/**RESET**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+}
+
+
+main nav{
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: aqua;
+}
+
+main section{
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+    background-color: red;
+}
+
+footer{
+    height: 100px;
+    background-color: blue;
+}
