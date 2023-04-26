@@ -48,6 +48,10 @@ footer{
     color: white;
 }
 
+.small-text{
+    font-size: .7rem;
+}
+
 
 
 
@@ -62,6 +66,10 @@ ul li{
     list-style-type: none;
     padding-top: .7rem;
     color: #6b6b6b;
+}
+
+ul#playlists li{
+    font-size: .9rem;
 }
 
 ul h3{
@@ -91,6 +99,11 @@ li img{
     border-radius: 50%;
 }
 
+.lower-nav .account{
+    padding-top: 1.5rem;
+}
+
+
 
 
 
@@ -117,6 +130,23 @@ li img{
 
     main section{
         width: calc(100% - 80px);
+    }
+
+    h1{
+        display: none;
+    }
+
+    #playlists,
+    .lower-nav span,
+    li span{
+        display: none;
+    }
+
+    li img{
+        width: 30px;
+        height: 30px;
+        color: #6b6b6b;
+        text-align: center;
     }
 }
 
