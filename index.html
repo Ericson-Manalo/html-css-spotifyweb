@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet"> 
+
+    <!-- FONT AWESOME 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Spotify</title>
 </head>
 <body>
@@ -18,7 +22,7 @@
         <nav>
             <div class="upper-nav">
                 <div class="flex">
-                    <img src="img/favicon.ico" alt="Spotify image" class="w-text">
+                    <img src="img/favicon.ico" alt="Spotify image" class="spotify-img">
                     <h1 class="w-text">
                         Spotify
                     </h1>
@@ -235,18 +239,21 @@
                         <div class="flex">
                             <div class="popular-covers">
                                 <img src="img/youg.jpeg" alt="Youg Cover">
+                                <h3>
+                                    Lana del Rey
+                                </h3>
                             </div>
 
                             <div class="popular-covers">
                                 <img src="img/einaudi.jpeg" alt="Einaudi Cover">
+                                <h3>
+                                    Ludovico Einaudi
+                                </h3>
                             </div>
 
                         </div>
                     </div>
                 </div>
-
-                
-
             </div>
 
         </section>
@@ -254,7 +261,63 @@
     </main>
 
     <footer>
+        <div class="flex footer-container">
+            <div class="flex l-side">
+                <div class="song-cover">
+                    <img src="img/sinister.jpeg" alt="Sinister Cover">
+                </div>
+                
+                <div class="song-title">
+                    <p class="w-text small-text">
+                        Sinister
+                    </p>
+                    <p class="small-text grey-text">
+                        Brano Nome
+                    </p>
+                </div>
 
+                <div class="flex">
+                    <i class="fa-regular fa-heart" style="color: #6b6b6b;"></i>
+                    <i class="fa-regular fa-folder"
+                    style="color: #6b6b6b;"></i>
+                </div>
+
+            </div>
+            <div class="flex m-side">
+                <div>
+                    <div class="flex music-icon">
+                        <i class="fa-solid fa-shuffle"
+                        style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-backward-step"
+                        style="color: #ffffff;"></i>
+                        <i class="fa-regular fa-circle-play"
+                        style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-forward-step"
+                        style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="flex">
+                        <span>
+                            0:25
+                        </span>
+
+                        <hr>
+
+                        <span> 
+                            4:35
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex r-side">
+                <i class="fa-solid fa-list" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>
+                <i class="fa-light fa-volume"></i>
+                <hr>
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>
