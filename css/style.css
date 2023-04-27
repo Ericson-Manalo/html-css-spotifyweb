@@ -72,6 +72,10 @@ footer{
 
 /*******************/
 
+#main{
+    overflow: auto;
+}
+
 .upper-nav, .lower-nav{
     padding: 1.5rem;
 }
@@ -86,6 +90,7 @@ footer{
 .menu{
     max-width: 700px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .main-container{
@@ -93,17 +98,20 @@ footer{
 }
 
 .recently-played{
-    margin-top: 1rem;
     flex-wrap: wrap;
 }
 
 .box{
-    width: calc((100% / 6) - 1rem);
-    height: 170px;
-    background-color: red;
-    margin-right: 1rem;
+    width: calc((100% / 6) - .5rem);
+    height: 200px;
+    margin-right: .5rem;
+    margin-top: 1rem;
 }
 
+
+.suggested{
+
+}
 
 
 
@@ -153,37 +161,37 @@ div.menu ul{
     justify-content: space-around;
     flex-wrap: wrap;
     font-size: .9rem;
-    padding-top: 1rem;
     padding: 1rem;
+}
+
+div.box{
+    height: 100%;
 }
 
 div.box img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 div.box h3{
     text-align: center;
     color: white;
     font-size: 1rem;
-    padding-top: .4rem;
 }
 
 div.box p{
     text-align: center;
     color: #6b6b6b;
     font-size: .8rem;
-    padding-top: .4rem;
+}
+
+div.suggested p{
+    color: #6b6b6b;
+    font-size: .8rem;
 }
 
 
-
-
-
-@media screen and (max-width: 1200px){
-
-}
 
 
 @media screen and (max-width: 992px){
@@ -192,15 +200,29 @@ div.box p{
         margin: 0 auto;
     }
 
+    .box{
+        width: calc((100% / 4) - .5rem);
+        margin-right: .5rem;
+    }
+
     .menu ul li{
         padding-right: 1.5rem;
     }
 }
 
+
 @media screen and (max-width: 768px){
+
+    .box{
+        width: calc((100% / 2) - 1rem);
+        height: 180px;
+        margin-right: 1rem;
+    }
     
 }
 
+
+/*XS*/
 @media screen and (max-width: 576px){
     
     main nav{
@@ -226,6 +248,12 @@ div.box p{
         height: 30px;
         color: #6b6b6b;
         text-align: center;
+    }
+
+    .box{
+        width: calc((100% / 2) - 1rem);
+        height: 180px;
+        margin-right: 1rem;
     }
 }
 
