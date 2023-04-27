@@ -168,12 +168,19 @@ span.cursor:hover{
 
 .fa-circle-play{
     font-size: 1.6rem;
-    padding-bottom: .5rem;
+}
+
+.music-icon{
+    justify-content: center;
 }
 
 
 .popular-artist h1{
     margin-top: 2rem;
+}
+
+.time-section{
+    width: 100%;
 }
 
 .popular-artist p{
@@ -209,6 +216,7 @@ li img{
 .download-side{
     border-bottom: 1px solid #6b6b6b;
     color: #6b6b6b;
+    align-items: center;
 }
 
 .account img{
@@ -276,7 +284,9 @@ div.popular-covers{
 .footer-container{
     padding: 1rem;
     height: 100%;
+    justify-content: space-between;
 }
+
 
 div.song-cover img{
     width: 50px;
@@ -300,9 +310,37 @@ div.r-side i{
     padding-left: 2rem;
 }
 
-div.m-side hr{
+div.m-side .flex{
     width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    justify-content: center;
+}
 
+div.m-side hr{
+    height: 1px;
+    width: 60%;
+    margin: .5rem;
+}
+
+.play-icon{
+    display: none;
+}
+
+.metal{
+    position: relative;
+}
+
+.play-icon:hover{
+    position: absolute;
+    margin: 0 auto;
+    z-index: 100;
+    opacity: 0.9;
+    top: 0%;
+    left: 0px;
+    right: 0px;
+    display: block;
 }
 
 
