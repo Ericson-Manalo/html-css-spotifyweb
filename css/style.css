@@ -32,8 +32,7 @@ main section{
 
 button{
     background-color: #080b12;
-    height: 60px;
-    padding: 1rem 3rem;
+    padding: .7rem 2.5rem;
     border-radius: 40px;
 }
 
@@ -82,13 +81,17 @@ hr{
     padding: 1.5rem;
 }
 
+.upper-nav{
+    height: 100%;
+}
+
 .spotify-img{
     filter: invert(1);
     padding-right: .3rem;
 }
 
 .upper-section{
-    height: 90px;
+    height: 80px;
     background-color: #080b12;
     justify-content: end;
     align-items: center;
@@ -127,7 +130,6 @@ hr{
 .l-side{
     width: 20%;
     align-items: center;
-    background-color: red;
 }
 
 .song-title{
@@ -138,14 +140,20 @@ hr{
     width: 60%;
     justify-content: center;
     align-items: center;
-    background-color: blue;
 }
 
 .r-side{
     width: 20%;
     align-items: center;
     justify-content: end;
-    background-color: red;
+}
+
+.fa-folder{
+    padding-left: 1rem;
+}
+
+.fa-circle-play{
+    font-size: 1.6rem;
 }
 
 
@@ -274,6 +282,11 @@ div.r-side i{
     padding-left: 2rem;
 }
 
+div.m-side hr{
+    width: 100%;
+
+}
+
 
 
 
@@ -314,6 +327,11 @@ div.r-side i{
     .popular-covers{
         width: calc((100% / 2) - 1rem);
         margin-right: 1rem;
+    }
+
+    div.l-side .flex{
+        padding-left: .6rem;
+        flex-direction: column;
     }
     
 }
@@ -357,6 +375,30 @@ div.r-side i{
         width: calc((100% / 2) - 1rem);
         margin-right: 1rem;
     }
+
+    .l-side{
+        width: 30%;
+    }
+
+
+    div.music-icon i{
+        padding-right: 1.2rem;
+    }
+    
+    .m-side{
+        width: 40%;
+
+    }
+    
+    .r-side{
+        width: 30%;
+    }
+
+    div.l-side .flex{
+        padding-left: .3rem;
+        flex-direction: column;
+    }
+
 }
 
 
