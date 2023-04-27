@@ -71,6 +71,10 @@ hr{
     color: #6b6b6b;
 }
 
+.cursor{
+    cursor: pointer;
+}
+
 /*******************/
 
 #main{
@@ -95,6 +99,18 @@ hr{
     background-color: #080b12;
     justify-content: end;
     align-items: center;
+}
+
+.fa-square-plus{
+    font-size: 1.4rem;
+}
+
+li.cursor:hover{
+    color: white;
+}
+
+span.cursor:hover{
+    color: white;
 }
 
 .menu{
@@ -148,12 +164,11 @@ hr{
     justify-content: end;
 }
 
-.fa-folder{
-    padding-left: 1rem;
-}
+
 
 .fa-circle-play{
     font-size: 1.6rem;
+    padding-bottom: .5rem;
 }
 
 
@@ -206,7 +221,6 @@ li img{
 .lower-nav .account{
     padding-top: 1.5rem;
 }
-
 
 .footer-container{
     justify-content: space-between;
@@ -278,6 +292,10 @@ div.music-icon i{
     padding-right: 3rem;
 }
 
+div.l-side i{
+    padding-right: .6rem;
+}
+
 div.r-side i{
     padding-left: 2rem;
 }
@@ -286,11 +304,6 @@ div.m-side hr{
     width: 100%;
 
 }
-
-
-
-
-
 
 
 @media screen and (max-width: 992px){
@@ -329,11 +342,19 @@ div.m-side hr{
         margin-right: 1rem;
     }
 
+    div.menu ul{
+        width: 80%;
+        margin: 0 auto;
+    }
+
     div.l-side .flex{
         padding-left: .6rem;
         flex-direction: column;
     }
-    
+
+    div.r-side i {
+        padding-left: .7rem;
+      }
 }
 
 
@@ -348,7 +369,7 @@ div.m-side hr{
         width: calc(100% - 80px);
     }
 
-    h1{
+    .upper-nav h1{
         display: none;
     }
 
@@ -363,6 +384,10 @@ div.m-side hr{
         height: 30px;
         color: #6b6b6b;
         text-align: center;
+    }
+
+    .download-side img{
+        width: 100%;
     }
 
     .box{
@@ -380,14 +405,12 @@ div.m-side hr{
         width: 30%;
     }
 
-
     div.music-icon i{
         padding-right: 1.2rem;
     }
     
     .m-side{
         width: 40%;
-
     }
     
     .r-side{
@@ -398,6 +421,10 @@ div.m-side hr{
         padding-left: .3rem;
         flex-direction: column;
     }
+
+    div.r-side i {
+        padding-left: 1rem;
+      }
 
 }
 
