@@ -41,10 +41,6 @@ footer{
     background-color: #282828;
 }
 
-hr{
-    width: 40%;
-    border: 1px solid white;
-}
 
 
 /***********************************
@@ -95,6 +91,9 @@ hr{
 }
 
 .upper-section{
+    position: fixed;
+    width: calc(100% - 200px);
+    z-index: 3;
     height: 80px;
     background-color: #080b12;
     justify-content: end;
@@ -111,6 +110,10 @@ li.cursor:hover{
 
 span.cursor:hover{
     color: white;
+}
+
+.main-section{
+    padding-top: 5rem;
 }
 
 .menu{
@@ -158,12 +161,27 @@ span.cursor:hover{
     align-items: center;
 }
 
+.bar{
+    height: 3px;
+    width: 55%;
+    border-radius: 6px;
+    background-color: #5a5a5a;
+    margin: .4rem;
+}
+
+.point-bar{
+    height: 3px;
+    width: 30%;
+    border-radius: 6px;
+    background-color: white;
+
+}
+
 .r-side{
     width: 20%;
     align-items: center;
     justify-content: end;
 }
-
 
 
 .fa-circle-play{
@@ -239,7 +257,7 @@ div.menu ul{
     justify-content: space-around;
     flex-wrap: wrap;
     font-size: .9rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 div.box{
@@ -299,7 +317,7 @@ div.l-side .flex{
 }
 
 div.music-icon i{
-    padding-right: 3rem;
+    padding-right: 1.5rem;
 }
 
 div.l-side i{
@@ -409,6 +427,10 @@ div.m-side hr{
 
     .upper-nav h1{
         display: none;
+    }
+
+    .upper-section{
+        width: calc(100% - 80px);
     }
 
     #playlists,
