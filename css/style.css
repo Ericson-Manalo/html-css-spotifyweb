@@ -112,6 +112,11 @@ span.cursor:hover{
     color: white;
 }
 
+p.cursor:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 .main-section{
     padding-top: 5rem;
 }
@@ -312,6 +317,35 @@ div.popular-covers{
     background-color: white;
 }
 
+.bar:hover .volume-bar{
+    background-color: #adff2f;
+}
+
+
+
+.point-circle{
+    position: relative;
+    display: none;
+    bottom: 200%;
+    left: 96%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.fa-circle{
+    display: none;
+}
+
+
+.bar:hover .point-bar{
+    background-color: #adff2f;
+}
+
+.bar:hover .point-circle{
+    display: block;
+}
 
 div.song-cover img{
     width: 50px;
@@ -339,7 +373,7 @@ div.m-side .flex{
     width: 100%;
     height: 100%;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: .5rem;
     justify-content: center;
 }
 
