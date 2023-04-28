@@ -353,19 +353,20 @@ div.m-side hr{
     display: none;
 }
 
-.metal{
+.cover-container{
     position: relative;
 }
 
-.play-icon:hover{
+.cover-container:hover .play-icon{
     position: absolute;
-    margin: 0 auto;
-    z-index: 100;
-    opacity: 0.9;
-    top: 0%;
-    left: 0px;
-    right: 0px;
     display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.play-icon .fa-circle-play{
+    font-size: 3.5rem;
 }
 
 
